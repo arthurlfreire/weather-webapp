@@ -1,0 +1,36 @@
+$text: #ffffff;
+$details: #85aa9b;
+$background: #18392b;
+$header: "Andika";
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+    .location{
+        color: $text;
+        font-family: $header, sans-serif;
+        font-size: 2rem;
+        transition: 0.2s;
+    }
+    .date{
+        color: $text;
+        font-family: $header, sans-serif;
+        font-size: 1.5rem;
+        transition: 0.2s;
+    }
+}
+.header:hover > .date{
+    color: $details;
+    transform: scale(1.05);
+}
+.header:hover > .location{
+    color: $details;
+    transform: scale(1.05);
+}

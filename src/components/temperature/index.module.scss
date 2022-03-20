@@ -1,0 +1,41 @@
+$text: #ffffff;
+$details: #85aa9b;
+$background: #18392b;
+$font: "Andika";
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    > article{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .celsius{
+        font-size: 2rem;
+        font-family: $font;
+        color: $text;
+        transition: 0.2s;
+    }
+    .kelvin, .fahrenheit{
+        font-size: 1.5rem;
+        font-family: $font;
+        color: $text;
+        transition: 0.2s;
+    }
+}
+.temperature:hover > .celsius{
+    color: $details;
+    transform: scale(1.05);
+}
+.temperature:hover > article > h3{
+    color: $details;
+    transform: scale(1.05);
+}
