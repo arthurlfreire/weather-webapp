@@ -1,0 +1,43 @@
+$text: #ffffff;
+$details: #85aa9b;
+$background: #18392b;
+$font: "Andika";
+.precipitation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    gap: 2rem;
+    .airHumidity, .rainProbaibility{
+        font-size: 1.5rem;
+        font-family: $font;
+        color: $text;
+        transition: 0.2s;
+    }
+    > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;  
+        gap: 0.25rem;
+        > span{
+            font-size: 1.5rem;
+            font-family: $font;
+            color: $text;
+            transition: 0.2s;
+        }
+    }
+}
+.precipitation:hover > div > span{
+    color: $details;
+    transform: scale(1.05);
+}
+.precipitation:hover > div > h3{
+    color: $details;
+    transform: scale(1.05);
+}
